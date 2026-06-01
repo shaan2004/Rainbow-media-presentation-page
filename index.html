@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%2300C853%22>🟢</text></svg>" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Rainbow Media | Digital Marketing & Brand Growth Agency</title>
+  <meta name="description"
+    content="Strategic SEO, social growth, paid advertising, and complete brand transformation. See how Rainbow Media drives massive, measurable business growth." />
+</head>
+
+<body>
+  <!-- Custom Lerp Cursor & Ribbons Cursor (Desktop Only) -->
+  <div class="custom-cursor"></div>
+  <div id="ribbon-cursor-container"></div>
+
+  <!-- Canvas Particle Background -->
+  <canvas id="particles-bg"></canvas>
+  <div class="subtle-grid-overlay"></div>
+
+  <!-- Pulsing Glow Bubbles -->
+  <div class="glow-bubble glow-bubble-1"></div>
+  <div class="glow-bubble glow-bubble-2"></div>
+  <div class="glow-bubble glow-bubble-3"></div>
+
+  <header class="navbar">
+    <a href="#home" class="logo" style="display: flex; align-items: center; gap: 8px;">
+      <img src="/logo.png" alt="Rainbow Media Logo" style="height: 48px; object-fit: contain; max-width: 180px;" />
+    </a>
+    <nav>
+      <ul class="navbar-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="btn btn-secondary" style="padding: 0.5rem 1.2rem; font-size: 0.85rem; border-color: var(--gold-primary); color: #FFFFFF;">
+      Book Audit ↓
+    </a>
+
+    <!-- Mobile hamburger -->
+    <button class="menu-btn" aria-label="Toggle mobile menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav-overlay">
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#videos">Videos</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="btn btn-secondary" style="margin-top: 1rem;">Book Audit ↓</a>
+  </div>
+
+  <!-- --- Hero Section --- -->
+  <section id="home" class="hero-section">
+    <div class="hero-left">
+      <div class="badge-pill">
+        <span class="badge-dot"></span>
+        <span>Available for global campaigns · Chennai, India</span>
+      </div>
+
+      <h1 id="typewriter-greeting" data-text="Rainbow Media.">Rainbow Media.</h1>
+
+      <div class="rotating-title-wrapper">
+        <div class="rotating-title gradient-text">Your Digital Growth Engine.</div>
+        <div class="rotating-title gradient-text">Measurable Brand Results.</div>
+        <div class="rotating-title gradient-text">Systems-Driven Scaling.</div>
+      </div>
+
+      <p class="subheading">
+        From SEO to brand development, we deliver measurable results. Fusing systems thinking with high-performing
+        growth algorithms under the leadership of <span class="client-highlight">Michael Dinesh Kumar S (MDK)</span>,Digital/Technical Head.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#services" class="btn btn-primary">Explore Our Services →</a>
+        <a href="#contact" class="btn btn-secondary">Book Free Audit ↓</a>
+      </div>
+
+      <div class="social-proof-strip">
+        5+ Years of Excellence · 200+ Clients Globally · Avg. ROI Delivered: +340% · Team of Digital Experts
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <!-- Hero Avatar Container with Premium CSS Smartphone Mockup & 3D Orbit System -->
+      <div class="hero-image-container">
+        <!-- Dashed Orbit Ring Path (Direct child so stacking works globally) -->
+        <div class="orbit-ring"></div>
+        
+        <!-- Orbiting Emojis with Gold Matte Tag Circles (Direct children for global z-index sorting) -->
+        <div class="orbit-item tag-reach">
+          <div class="orbit-tag-content">
+            <span class="orbit-emoji">📈</span>
+            <span class="orbit-text">+340%</span>
+          </div>
+        </div>
+        <div class="orbit-item tag-messages">
+          <div class="orbit-tag-content">
+            <span class="orbit-emoji">💬</span>
+            <span class="orbit-text">127 Leads</span>
+          </div>
+        </div>
+        <div class="orbit-item tag-viral">
+          <div class="orbit-tag-content">
+            <span class="orbit-emoji">🔥</span>
+            <span class="orbit-text">Viral Reach</span>
+          </div>
+        </div>
+        <div class="orbit-item tag-rating">
+          <div class="orbit-tag-content">
+            <span class="orbit-emoji">⭐</span>
+            <span class="orbit-text">5.0 GMB</span>
+          </div>
+        </div>
+
+        <div class="hero-phone-mockup">
+          <!-- Dynamic Island Notch & Lens -->
+          <div class="phone-dynamic-island"></div>
+          <div class="phone-camera-lens"></div>
+
+          <!-- Screen container displaying MDK image inside -->
+          <div class="phone-screen">
+            <img src="/mdk_hero.png" alt="Michael Dinesh Kumar S (MDK) -Digital/Technical Head"
+              class="hero-avatar-img" />
+          </div>
+
+          <!-- Reflection Glare Overlay -->
+          <div class="phone-glare-reflection"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- --- Metrics Section & Activity Ticker --- -->
+  <section class="metrics-section">
+    <div class="metrics-row">
+      <!-- Metric 1 -->
+      <div class="metric-card">
+        <div class="metric-number">10+</div>
+        <div class="metric-label">Years of Experience</div>
+        <div class="metric-sub">IT + Digital Combined</div>
+      </div>
+
+      <!-- Metric 2 -->
+      <div class="metric-card">
+        <div class="metric-number">5+</div>
+        <div class="metric-label">Years in Digital Marketing</div>
+        <div class="metric-sub">At Rainbow Media</div>
+      </div>
+
+      <!-- Metric 3 -->
+      <div class="metric-card">
+        <div class="metric-number">35+</div>
+        <div class="metric-label">Skills & Specialisations</div>
+        <div class="metric-sub">Across SEO, Social, Tech & Analytics</div>
+      </div>
+
+      <!-- Metric 4 -->
+      <div class="metric-card">
+        <div class="metric-number">500+</div>
+        <div class="metric-label">LinkedIn Connections</div>
+        <div class="metric-sub">Growing Professional Network</div>
+      </div>
+    </div>
+
+    <!-- Loops horizontal activities ticker -->
+    <div class="marquee-container">
+      <div class="marquee-content">
+        <div class="marquee-item"><span>✅</span> SEO audit completed for client</div>
+        <div class="marquee-item"><span>✅</span> Social media campaign launched</div>
+        <div class="marquee-item"><span>✅</span> Analytics dashboard built</div>
+        <div class="marquee-item"><span>✅</span> Brand identity designed</div>
+        <div class="marquee-item"><span>✅</span> AI strategy deployed</div>
+        <div class="marquee-item"><span>✅</span> Campaign ROI improved 340%</div>
+        <!-- Seamless loop copies -->
+        <div class="marquee-item"><span>✅</span> SEO audit completed for client</div>
+        <div class="marquee-item"><span>✅</span> Social media campaign launched</div>
+        <div class="marquee-item"><span>✅</span> Analytics dashboard built</div>
+        <div class="marquee-item"><span>✅</span> Brand identity designed</div>
+        <div class="marquee-item"><span>✅</span> AI strategy deployed</div>
+        <div class="marquee-item"><span>✅</span> Campaign ROI improved 340%</div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- --- Section 2: About Us --- -->
+  <section id="about" class="about-section">
+    <!-- Left Column: Circular Profile Image -->
+    <div class="about-image-wrapper">
+      <div class="about-image-circle">
+        <img src="/mdk_about.png" alt="Rainbow Media - Corporate digital growth agency" />
+      </div>
+    </div>
+
+    <!-- Right Column: Story Copy -->
+    <div class="about-content">
+      <h2>About Rainbow Media</h2>
+      <p>
+        We are a full-service digital agency built on a foundation of technology and growth systems. We bridge the gap
+        between complex analytical infrastructures and highly creative marketing campaigns.
+      </p>
+      <p>
+        Led by <span class="client-highlight">Michael Dinesh Kumar S (MDK)</span>,Digital/Technical Head, we help brands globally engineer custom
+        digital strategies that don't just run ads — they scale customer acquisition pipelines. From data-driven SEO
+        architecture to cross-channel brand development, we deliver clarity and ROI in a crowded digital landscape.
+      </p>
+
+      <!-- Trust & Credentials Badges -->
+      <div class="about-badges">
+        <div class="badge">🏢 Rainbow Media · Est. Chennai</div>
+        <div class="badge">🌍 Bahrain & Global Clients</div>
+        <div class="badge">📈 Avg 340% ROI Delivered</div>
+        <div class="badge">🎓 Engineered Growth Systems</div>
+      </div>
+
+      <div class="about-quote">
+        "We don't just run campaigns — we engineer growth systems."
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Section 3: Our Core Services & Proficiency --- -->
+  <section id="services" class="services-section">
+    <div class="services-title">
+      <p>OUR CAPABILITIES</p>
+      <h2>Services & Proficiency</h2>
+    </div>
+
+    <div class="services-grid">
+      <!-- Service Card 1 -->
+      <div class="service-card">
+        <div class="service-icon">🔍</div>
+        <h3 class="service-title">Search Engine Optimization (SEO)</h3>
+        <p class="service-desc">Data-backed search audits, advanced crawlability architectures, high-impact
+          link-building models, and localized market dominance.</p>
+        <div class="proficiency-label">PROFICIENCY LEVEL</div>
+        <div class="proficiency-bar">
+          <div class="proficiency-fill" style="--proficiency: 95%"></div>
+        </div>
+        <div class="proficiency-text">
+          <span>Expert Mastery</span>
+          <span>95%</span>
+        </div>
+      </div>
+
+      <!-- Service Card 2 -->
+      <div class="service-card">
+        <div class="service-icon">📱</div>
+        <h3 class="service-title">Social Media Marketing (SMM)</h3>
+        <p class="service-desc">Creative content scaling strategies, community building frameworks, paid amplifier
+          funnels, and viral engagement optimization loop designs.</p>
+        <div class="proficiency-label">PROFICIENCY LEVEL</div>
+        <div class="proficiency-bar">
+          <div class="proficiency-fill" style="--proficiency: 92%"></div>
+        </div>
+        <div class="proficiency-text">
+          <span>High ROI Campaigns</span>
+          <span>92%</span>
+        </div>
+      </div>
+
+      <!-- Service Card 3 -->
+      <div class="service-card">
+        <div class="service-icon">🚀</div>
+        <h3 class="service-title">Paid Acquisition (PPC)</h3>
+        <p class="service-desc">Multi-channel performance campaigns across Meta, Google Ads, LinkedIn, and programmatic
+          setups optimized for lead acquisition costs.</p>
+        <div class="proficiency-label">PROFICIENCY LEVEL</div>
+        <div class="proficiency-bar">
+          <div class="proficiency-fill" style="--proficiency: 90%"></div>
+        </div>
+        <div class="proficiency-text">
+          <span>Precision Scaling</span>
+          <span>90%</span>
+        </div>
+      </div>
+
+      <!-- Service Card 4 -->
+      <div class="service-card">
+        <div class="service-icon">💻</div>
+        <h3 class="service-title">Web & Funnel Infrastructure</h3>
+        <p class="service-desc">High-speed modular web development, high-converting funnel architectures, CRM
+          integrations, and server system configurations.</p>
+        <div class="proficiency-label">PROFICIENCY LEVEL</div>
+        <div class="proficiency-bar">
+          <div class="proficiency-fill" style="--proficiency: 88%"></div>
+        </div>
+        <div class="proficiency-text">
+          <span>Full-Stack Deployments</span>
+          <span>88%</span>
+        </div>
+      </div>
+
+      <!-- Service Card 5 -->
+      <div class="service-card">
+        <div class="service-icon">🤖</div>
+        <h3 class="service-title">AI Workflow Integration</h3>
+        <p class="service-desc">Automating content pipelines, programmatic SEO clusters, and intelligent lead nurturing
+          bots via customized AI tools.</p>
+        <div class="proficiency-label">PROFICIENCY LEVEL</div>
+        <div class="proficiency-bar">
+          <div class="proficiency-fill" style="--proficiency: 85%"></div>
+        </div>
+        <div class="proficiency-text">
+          <span>Advanced Automation</span>
+          <span>85%</span>
+        </div>
+      </div>
+
+      <!-- Service Card 6 -->
+      <div class="service-card">
+        <div class="service-icon">⚙️</div>
+        <h3 class="service-title">CRM & Systems Automation</h3>
+        <p class="service-desc">Deep Zoho CRM setup, client portal pipelines, automated sales follow-ups, and end-to-end
+          cloud sync infrastructure.</p>
+        <div class="proficiency-label">PROFICIENCY LEVEL</div>
+        <div class="proficiency-bar">
+          <div class="proficiency-fill" style="--proficiency: 90%"></div>
+        </div>
+        <div class="proficiency-text">
+          <span>Seamless Integration</span>
+          <span>90%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- --- Live Engagement Video Cards Section --- -->
+  <section id="videos" class="engagement-cards-section">
+    <div class="title-underline-container">
+      <h2 class="section-title">How Rainbow Media Drives Results</h2>
+      <div class="animated-underline"></div>
+    </div>
+    <p class="section-subtitle">Real-time simulation of our active campaigns, local search audits, and brand
+      transformations.</p>
+
+    <div class="cards-grid">
+      <!-- Card 1: Instagram Growth Strategy -->
+      <div class="phone-card" data-video="instagram">
+        <div class="live-indicator">🔴 LIVE CAMPAIGN</div>
+        <div class="phone-screen">
+          <video src="/insta.mp4" autoplay loop muted playsinline preload="auto"></video>
+        </div>
+        <div class="card-label">
+          <h3>Instagram Growth Strategy</h3>
+          <p>Unlock massive organic reach and high engagement. We build automated viral funnels that turn casual viewers
+            into paying followers.</p>
+          <a href="#contact" class="btn btn-primary"
+            style="margin-top: 15px; font-size: 0.85rem; width: 100%; border-radius: 8px; padding: 10px 15px;">Claim
+            Instagram Audit →</a>
+        </div>
+      </div>
+
+      <!-- Card 2: Local SEO & Google My Business -->
+      <div class="phone-card" data-video="gmb">
+        <div class="live-indicator">🔴 LIVE AUDIT</div>
+        <div class="phone-screen">
+          <video src="/gmb.mp4" autoplay loop muted playsinline preload="auto"></video>
+        </div>
+        <div class="card-label">
+          <h3>Local SEO & GMB Domination</h3>
+          <p>Appear at the top of local searches when high-intent customers look for your service. 3x call volume and
+            inbound driving directions.</p>
+          <a href="#contact" class="btn btn-primary"
+            style="margin-top: 15px; font-size: 0.85rem; width: 100%; border-radius: 8px; padding: 10px 15px;">Get Free
+            Local SEO Audit →</a>
+        </div>
+      </div>
+
+      <!-- Card 3: YouTube Growth & Video SEO -->
+      <div class="phone-card" data-video="yt">
+        <div class="live-indicator">🔴 LIVE GROWTH</div>
+        <div class="phone-screen">
+          <video src="/yt.mp4" autoplay loop muted playsinline preload="auto"></video>
+        </div>
+        <div class="card-label">
+          <h3>YouTube Growth & Video SEO</h3>
+          <p>Rank high on Google and YouTube search. Scale organic traffic velocity and capture perpetual high-intent
+            organic leads.</p>
+          <a href="#contact" class="btn btn-primary"
+            style="margin-top: 15px; font-size: 0.85rem; width: 100%; border-radius: 8px; padding: 10px 15px;">Launch
+            YouTube Strategy →</a>
+        </div>
+      </div>
+
+      <!-- Card 4: High-Converting Web Funnels -->
+      <div class="phone-card" data-video="web">
+        <div class="live-indicator">🔴 LIVE CONVERSIONS</div>
+        <div class="phone-screen">
+          <video src="/web.mp4" autoplay loop muted playsinline preload="auto"></video>
+        </div>
+        <div class="card-label">
+          <h3>High-Converting Web Funnels</h3>
+          <p>Lightning-fast loading speeds combined with conversion-driven UI layouts that seamlessly turn traffic into
+            scheduled sales calls.</p>
+          <a href="#contact" class="btn btn-primary"
+            style="margin-top: 15px; font-size: 0.85rem; width: 100%; border-radius: 8px; padding: 10px 15px;">Build My
+            Custom Funnel →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- --- CTA & Contact Form --- -->
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+      <div class="contact-left">
+        <h2 class="gradient-text">Ready to Transform Your Brand?</h2>
+        <h3
+          style="font-family: var(--font-headings); font-weight: 700; font-size: 1.3rem; margin: 0.5rem 0 1rem 0; color: var(--text-primary);">
+          Let's Talk Strategy.</h3>
+        <p>
+          Schedule your FREE digital audit with Rainbow Media today. Whether you are targeting organic SEO growth
+          pipelines, high-ROI social architectures, local market domination, or integrated lead generation funnels — we
+          are ready to scale your business.
+        </p>
+        <div class="contact-buttons"
+          style="display: flex; flex-direction: column; gap: 1rem; width: 100%; max-width: 320px;">
+          <a href="tel:+919791056969" class="btn btn-primary" style="justify-content: flex-start;">
+            <span>📞 Call Us: +91 97910 56969</span>
+          </a>
+        </div>
+        <div class="contact-details-strip">
+          Corporate Agency Office · Chennai · Serving Brands Globally
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <div class="contact-form-card">
+          <!-- Connects to Formspree, fallback to simulation if missing ID -->
+          <form id="contact-form" action="https://formspree.io/f/placeholder" method="POST">
+            <div class="form-group">
+              <label for="form-name">Company Name & Name</label>
+              <input type="text" id="form-name" name="name" class="form-input" placeholder="Your Name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="form-phone">Phone Number</label>
+              <input type="tel" id="form-phone" name="phone" class="form-input" placeholder="Your Phone / Mobile"
+                required />
+            </div>
+
+            <div class="form-group">
+              <label for="form-message">Describe Your Brand & Marketing Goals</label>
+              <textarea id="form-message" name="message" class="form-input" rows="4"
+                placeholder="Briefly describe your agency needs..." required></textarea>
+            </div>
+
+            <button type="submit" id="form-submit-btn" class="form-submit-btn">
+              Request Strategy Session →
+            </button>
+
+            <div id="form-feedback" class="form-feedback"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Footer --- -->
+  <footer class="footer">
+    <div>
+      © 2026 Rainbow Media · <span class="client-highlight">Michael Dinesh Kumar S (MDK)</span>,Digital/Technical Head · Chennai, India
+    </div>
+    <div class="footer-socials">
+      <!-- LinkedIn -->
+      <a href="https://linkedin.com/in/dineshkumar-mdk" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+          <rect x="2" y="9" width="4" height="12"></rect>
+          <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+      </a>
+      <!-- Instagram -->
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+      </a>
+      <!-- WhatsApp -->
+      <a href="https://wa.me/919791056969" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path
+            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Chat Widget -->
+  <a href="https://wa.me/919791056969?text=Hello%20Rainbow%20Media!%20I%27d%20like%20to%20learn%20more%20about%20your%20digital%20marketing%20and%20brand%20growth%20services." 
+     target="_blank" rel="noopener noreferrer" class="whatsapp-floating" aria-label="Chat on WhatsApp">
+    <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
+      <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+    </svg>
+  </a>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
