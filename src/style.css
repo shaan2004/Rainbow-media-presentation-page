@@ -2057,6 +2057,22 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+.phone-card-title {
+  font-family: var(--font-headings);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  transition: var(--transition-smooth);
+}
+
+.phone-card:hover .phone-card-title {
+  color: var(--gold-light);
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.3);
+}
+
 .card-label h3 {
   font-family: var(--font-headings);
   font-size: 1.15rem;
